@@ -35,6 +35,8 @@ if ingredients_list:
         ingredients_string += fruit_chosen + " "
         
     #st.write(ingredients_string)
+    my_insert_stmt = """INSERT INTO smoothies.public.orders(ingredients, name_on_order)
+                        VALUES ('{}', '{}')""".format(ingredients_string, name_on_order)
     
      
     
